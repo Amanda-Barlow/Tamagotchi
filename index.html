@@ -6,33 +6,37 @@
 <body>
     <script type="text/javascript" src="js/app.js"></script>
     <h1>Welcome Your New Pet!</h1>
-    <form>
-        <label for="Name Pet">Name Your Pet:</label><br>
-        <input type="text" id="petName">
-        <input type="submit" value="Submit">
-    </form>
+
+    <form name="myForm" action="" method="GET">
+        Enter something in the box: <br>
+        <input type="text" name="inputbox" value="">
+        <input type="button" name="button" value="Click" onClick="petName(this.form)">
+      </form>
+
+    <!-- <div>
+        <img src ="https://imgur.com/gallery/HbsIg52" alt="">
+    </div> -->
     <br>
     <br>
     <div class="life">
         Hunger Level:
-    <div class="hunger" id="hunger">
-    </div>
+            <div class="hunger" id="hunger">
+            </div>
     <br>
-    Energy Level:
-    <div class="energy" id="energy">
-    </div>
-    
+        Energy Level:
+            <div class="energy" id="energy">
+            </div>
     <br>
-    Boredom Level:
-    <div class="play" id="play">
-        <br>
-        <br>
-    </div>
+        Boredom Level:
+            <div class="play" id="play">
+            </div>
+    <br>
+    <br>
     <div class="buttons">
-    <button onClick="Feed">Feed Your Pet</button>
-    <button onClick="Sleep">Let Your Pet Sleep</button>
-    <button onClick="Play">Play With Your Pet</button>
-    <button onClisk="Light">Lights</button>
+        <button onClick="Feed">Feed Your Pet</button>
+        <button onClick="Energy">Let Your Pet Sleep</button>
+        <button onClick="Play">Play With Your Pet</button>
+        <button onClisk="Light">Lights</button>
     </div>
 </body>
 </html>

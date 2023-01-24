@@ -1,19 +1,20 @@
 
-const name = document.getElementById("petName");
-const maxHunger = 10;
-const maxEnergy = 10;
-const maxPlay = 10;
+function petName (form) {
+    var inputValue = form.inputbox.value;
+    alert ("You Named Your Pet: " + inputValue);
+}
 
 // Create a class for your Tamagotchi, 
-function Pet() {
-    constructor()
-    this.name = "name";
-    this.energy = maxEnergy;
-    this.hunger = maxHunger;
-    this.play = maxPlay;
-    this.age = 1;
+const Pet = function(petName, energy, hunger, play, age) {
+    this.petName = petName;
+    this.energy = energy;
+    this.hunger = hunger;
+    this.play = play;
+    this.age = age;
     }
-console.log (Pet);
+
+console.log(Tamagotchi = new Pet (petName, 10, 10, 10, 1))
+
 //Create event listeners/handlers that call methods in your game class
 //Display a charecter to represent your pet, must move
 
@@ -21,13 +22,19 @@ console.log (Pet);
 //Hunger (1-10 scale), Sleepiness (1-10 scale), Boredom (1-10 scale), Age Up
     //Make these decrease on intervals and increase with user action
 
-const hungerLife =
-document.querySelector("#hunger");
-const energyLife =
-document.querySelector("#energy");
-const playLife =
-document.querySelector("#play");
- console.log (hungerLife)   
+// let hunger =
+//     document.getElementById("#hunger");
+//     console.log(hunger)
+// let sleepLife = 
+//     document.getElementById("#energy");
+//     console.log(energy)
+// let playLife =
+//     document.getElementById("#play");
+//     console.log(play)
+// function hungerLife(){
+//     for (i = 10, i > 0, i--)
+
+// }  
     
 //Add buttons to feed your pet, turn off the lights, and play with your pet
     const hungerBtn = document.querySelector("#action-Feed");
