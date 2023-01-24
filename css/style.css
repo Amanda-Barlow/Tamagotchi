@@ -1,8 +1,19 @@
 body {
-    background-color: honeydew;
+    background-color: #bdb2ff;
     font-family: verdana;
-    font-style: 300%;
-    border: 5px solid powderblue;
+    font-size: 150%;
+    border: 5px solid #ffadad;
     padding: 30px;
     margin: 50px;
+}
+h1 {
+    font-family: 'Merienda', cursive;
+    text-align: center;
+}
+.buttons {
+    background-color: #9bf6ff;
+    text-align: center;
+    margin: 30px;
+    padding: 50px;
+    font-size: 40px;
 }

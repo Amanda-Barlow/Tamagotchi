@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barlow DOMagotchie</title>
+    <title>Barlow Tamagotchie</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script type="text/javascript" src "js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <h1>Welcome Your New Pet!</h1>
+    <form>
+        <label for="Name Pet">Name Your Pet:</label><br>
+        <input type="text" id="petName">
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <div class="life">
+        Hunger Level:
+    <div class="hunger" id="hunger">
+    </div>
+    <br>
+    Energy Level:
+    <div class="energy" id="energy">
+    </div>
+    
+    <br>
+    Boredom Level:
+    <div class="play" id="bordom">
+        <br>
+        <br>
+    </div>
+    <div class="buttons">
+    <button onClick="Feed()">Feed Your Pet</button>
+    <button onClick="Sleep()">Let Your Pet Sleep</button>
+    <button onClick="Play()">Play With Your Pet</button>
+    </div>
 </body>
 </html>
