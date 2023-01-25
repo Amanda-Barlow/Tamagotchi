@@ -1,9 +1,9 @@
-//Create an input for the name
+
 function petName (form) {
     const inputValue = form.inputbox.value;
-//Alert the user of chosen name
     alert ("You Named Your Pet: " + inputValue);
 }
+
 // Create a class for your Tamagotchi, 
 const Pet = function(petName, energy, hunger, play, age) {
     this.petName = petName;
@@ -16,8 +16,10 @@ const Pet = function(petName, energy, hunger, play, age) {
 console.log(Tamagotchi = new Pet (petName, 10, 10, 10, 1))
 
 //Create event listeners/handlers that call methods in your game class
+//Display a charecter to represent your pet, must move
+
 //Hunger (1-10 scale), Sleepiness (1-10 scale), Boredom (1-10 scale), Age Up
-//Make these decrease on intervals and increase with user action
+    //Make these decrease on intervals and increase with user action
 
 const hunger = setInterval(hLife, 8000);
     let uptoHunger=10;
@@ -54,10 +56,12 @@ const age = setInterval(ageUp, 10000);
     aCount.innerHTML=++uptoAge;
     if(uptoAge === 10){
     clearInterval(play); alert("You Win!"); 
-    im
+    
     }
 }   
 //Add buttons to feed your pet, turn off the lights, and play with your pet
+
+
 const button1 = document.getElementById("feed()")
 let handleIncrement = () => {
     uptoHunger++;
@@ -73,9 +77,4 @@ const button3 = document.getElementById("playWith()")
 const button4 = document.getElementById("lights()")
 
 
-// Pet dies if they reach zero
-
-//Unable to get buttons to work for incrementing age up
-//Unable to animate object even though "spot" is not part of the background
-//Unable to change picture to age spot
-//Accomplishments - Everthing else
+// Pet dies if they reach zero, Pet changes as they age up
