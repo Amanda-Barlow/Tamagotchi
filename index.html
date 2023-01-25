@@ -1,73 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-     <title>Barlow Tamagatchie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Barlow Tamagotchie</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <script type="text/javascript" src="js/app.js"></script>
     <h1>Welcome Your New Pet!</h1>
-
+    <p1>
     <form name="myForm" action="" method="GET">
-        Choose A Name For Your Pet: <br>
+        Choose A Name For Your Pet: 
+        <br>
+        <br>
         <input type="text" name="inputbox" value="">
         <input type="button" name="button" value="Submit" onClick="petName(this.form)">
       </form>
-    <br>
-    <br>
-    <div class="life">
-        Hunger Level:
-            <div class="hunger" id="hunger">
-                <div id="hCounter"
-            </div>
-            <script>
-                let hCounter=setInterval(updated, 8000);
-                let upto=10;
-                function updated(){
-                    const count= document.getElementById("hCounter");
-                        count.innerHTML=--upto;
-                        if(upto<=0){
-                            clearInterval(counts); 
-                }
-            }
-            </script>
-    <br>
-        Energy Level:
-            <div class="energy" id="energy">
-            </div>
-            <script>
-                let eCounter=setInterval(updated, 8000);
-                let upto=10;
-                function updated(){
-                    const count= document.getElementById("eCounter");
-                        count.innerHTML=--upto;
-                        if(upto===0){
-                            clearInterval(counts); 
-                }
-            }
-            </script>
-    <br>
-        Boredom Level:
-            <div class="play" id="play">
-            </div>
-            <script>
-                let pCounter=setInterval(updated, 8000);
-                let upto=10;
-                function updated(){
-                    const count= document.getElementById("pCounter");
-                        count.innerHTML=--upto;
-                        if(upto===0){
-                            clearInterval(counts); 
-                }
-            }
-            </script>
-    <br>
     <br>
     <div class="button">
         <button onClick="Feed()">"Feed Your Pet"</button>
         <button onClick="Energy()">Let Your Pet Sleep</button>
         <button onClick="Play()">Play With Your Pet</button>
         <button onClick="Lights()">Lights</button>
+        </div>
+        <br>
     </div>
+    <div class="game">
+    <div class="spot">
+        <img src="youngspot.jpg">
+    <br>
+</div>
+<div class="life">
+    Hunger Level:
+        <div class="hunger" id="hunger">
+        </div>
+        <br>
+    Energy Level:
+        <div class="energy" id="energy">
+        </div>
+        <br>
+    Boredom Level:
+        <div class="play" id="play">
+        </div>
 </script>
 </body>
 </html>

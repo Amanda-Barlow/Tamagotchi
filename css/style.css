@@ -1,15 +1,35 @@
+
 body {
-    background-color: #bdb2ff;
+    background-color:#0096c7;
     font-family: verdana;
-    font-size: 150%;
-    border: 5px solid #ffadad;
+    font-size: 170%;
+    text-align: center;
     padding: 30px;
     margin: 50px;
 }
+.game {
+    background-image: url("world.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    display: flex;
+}
 h1 {
     font-family: 'Merienda', cursive;
-    text-align: center;
+    text-align:ncenter;
 }
+img {
+    display:block;
+    margin-top: 400px;
+    margin-left: 250px;
+    position: center;
+    padding: 100px;
+    width: 150px;
+    height: 150px;
+
+}
+
 .buttons {
     background-color: #9bf6ff;
     text-align: center;
