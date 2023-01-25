@@ -21,44 +21,32 @@ console.log(Tamagotchi = new Pet (petName, 10, 10, 10, 1))
 //Hunger (1-10 scale), Sleepiness (1-10 scale), Boredom (1-10 scale), Age Up
     //Make these decrease on intervals and increase with user action
 
-let hunger =
-    document.getElementById("#hunger");
-    
-let energy = 
-    document.getElementById("#energy");
-    
-let play =
-    document.getElementById("#play");
- 
+const hunger = setInterval(hLife, 8000);
+    let upto=10;
+    function hLife(){
+    const hCount= document.getElementById("hunger");
+    hCount.innerHTML=--upto;
+    if(upto<=1){
+    clearInterval(hunger); 
+    }
+}
 
-// let hCounter=setInterval(hUpdated, 8000);
-//     let upto=10;
-//     function hUpdated(){
-//     const hCount= document.getElementById("hCounter");
-//     hCount.innerHTML=--upto;
-//     if(upto<=1){
-//     clearInterval(counts); 
-//     }
-// }
-
-// let eCounter=setInterval(eUpdated, 8000);
-
-//         function eUpdated(){
-//         const eCount= document.getElementById("eCounter");
-//         eCount.innerHTML=--upto;
-//         if(upto<=1){
-//         clearInterval(counts); 
-//     }
-// }
-// let pCounter=setInterval(pUpdated, 8000);
-
-//         function pUpdated(){
-//         const count= document.getElementById("pCounter");
-//         pCount.innerHTML=--upto;
-//         if(upto<=1){
-//         setTimeout(); 
-//     }
-// }
+const energy = setInterval(eLife, 8000);
+    function eLife() {        
+    const eCount= document.getElementById("energy");
+    eCount.innerHTML=--upto;
+    if(upto<=1){
+    clearInterval(energy); 
+    }
+}
+const play = setInterval(pLife, 8000);
+    function pLife(){
+    const pCount= document.getElementById("play");
+    pCount.innerHTML=--upto;
+    if(upto<=1){
+    clearInterval(play); 
+    }
+}
     
 //Add buttons to feed your pet, turn off the lights, and play with your pet
 const button = document.querySelector("js-button")
