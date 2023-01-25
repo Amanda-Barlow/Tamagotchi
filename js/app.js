@@ -1,6 +1,6 @@
 
 function petName (form) {
-    var inputValue = form.inputbox.value;
+    const inputValue = form.inputbox.value;
     alert ("You Named Your Pet: " + inputValue);
 }
 
@@ -49,20 +49,31 @@ const play = setInterval(pLife, 6000);
     clearInterval(play); alert("Oh no, they died from boredom!")
     }
 }
-    
-//Add buttons to feed your pet, turn off the lights, and play with your pet
-const button = document.querySelector("feed()")
-button.addEventListener("click", feed());
-    function feed() {
-       return (this.hunger + 2) 
+const age = setInterval(ageUp, 10000);
+    let uptoAge = 1;
+    function ageUp(){
+    const aCount= document.getElementById("age");
+    aCount.innerHTML=++uptoAge;
+    if(uptoAge === 10){
+    clearInterval(play); alert("You Win!"); 
     }
-const button2 = document.querySelector("energize()")
+}   
+//Add buttons to feed your pet, turn off the lights, and play with your pet
+
+const button1 = document.getElementById("feed()")
+button1.addEventListener("click", feed());
+const handleIncrement = () => {
+    hunger++;
+    feed().innerHTML = count;
+}
+  
+const button2 = document.getElementById("energize()")
 button2.addEventListener("click", energize());
 
-const button3 = document.querySelector("playWith()")
+const button3 = document.getElementById("playWith()")
 button3.addEventListener("click", playWith());
 
-const button4 = document.querySelector("lights()")
+const button4 = document.getElementById("lights()")
 button4.addEventListener("click", lights());
 
 // Pet dies if they reach zero, Pet changes as they age up
