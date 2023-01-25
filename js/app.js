@@ -26,7 +26,7 @@ const hunger = setInterval(hLife, 8000);
     function hLife(){
     const hCount= document.getElementById("hunger");
     hCount.innerHTML=--uptoHunger;
-    if(uptoHunger<=1){
+    if(uptoHunger<=0){
     clearInterval(hunger); alert("Oh no, they died from hunger!")
     }
 }
@@ -36,7 +36,7 @@ const energy = setInterval(eLife, 12000);
     function eLife() {        
     const eCount= document.getElementById("energy");
     eCount.innerHTML=--uptoEnergy;
-    if(uptoEnergy<=1){
+    if(uptoEnergy<=0){
     clearInterval(energy); alert("Oh no, they died from exhaustion!")
     }
 }
@@ -45,33 +45,24 @@ const play = setInterval(pLife, 6000);
     function pLife(){
     const pCount= document.getElementById("play");
     pCount.innerHTML=--uptoPlay;
-    if(uptoPlay<=1){
+    if(uptoPlay<=0){
     clearInterval(play); alert("Oh no, they died from boredom!")
     }
 }
     
 //Add buttons to feed your pet, turn off the lights, and play with your pet
-const button = document.querySelector("js-button")
-
-button.addEventListener("click", Feed());
-    function Feed() {
-    for(let h = 0; h >= 10; h++);{
-       return (hunger[h] + 1) 
+const button = document.querySelector("feed()")
+button.addEventListener("click", feed());
+    function feed() {
+       return (this.hunger + 2) 
     }
+const button2 = document.querySelector("energize()")
+button2.addEventListener("click", energize());
 
-}
-button.addEventListener("click", Energy());
+const button3 = document.querySelector("playWith()")
+button3.addEventListener("click", playWith());
 
-    button.addEventListener("click", Play());
-
-    button.addEventListener("click", Lights());
-    
-function lights() {
-        document.getElementById("lights");
-    }
-
-//Add scores for each button
-
-
+const button4 = document.querySelector("lights()")
+button4.addEventListener("click", lights());
 
 // Pet dies if they reach zero, Pet changes as they age up
