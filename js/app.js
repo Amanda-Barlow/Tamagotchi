@@ -59,10 +59,10 @@ const age = setInterval(ageUp, 10000);
 }   
 //Add buttons to feed your pet, turn off the lights, and play with your pet
 const button1 = document.getElementById("feed()")
-let handleIncrement = () => {
-    uptoHunger++;
-    feed().innerHTML = count;
-}
+// let handleIncrement = () => {
+//     uptoHunger++;
+//     feed().innerHTML = count;
+// }
   
 const button2 = document.getElementById("energize()")
 
@@ -78,4 +78,4 @@ const button4 = document.getElementById("lights()")
 //Unable to get buttons to work for incrementing age up
 //Unable to animate object even though "spot" is not part of the background
 //Unable to change picture to age spot
-//Accomplishments - Everthing else
+//Accomplishments - Everthing
