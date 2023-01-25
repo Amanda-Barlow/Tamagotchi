@@ -22,29 +22,31 @@ console.log(Tamagotchi = new Pet (petName, 10, 10, 10, 1))
     //Make these decrease on intervals and increase with user action
 
 const hunger = setInterval(hLife, 8000);
-    let upto=10;
+    let uptoHunger=10;
     function hLife(){
     const hCount= document.getElementById("hunger");
-    hCount.innerHTML=--upto;
-    if(upto<=1){
-    clearInterval(hunger); 
+    hCount.innerHTML=--uptoHunger;
+    if(uptoHunger<=1){
+    clearInterval(hunger); alert("Oh no, they died from hunger!")
     }
 }
 
-const energy = setInterval(eLife, 8000);
+const energy = setInterval(eLife, 12000);
+    let uptoEnergy=10;
     function eLife() {        
     const eCount= document.getElementById("energy");
-    eCount.innerHTML=--upto;
-    if(upto<=1){
-    clearInterval(energy); 
+    eCount.innerHTML=--uptoEnergy;
+    if(uptoEnergy<=1){
+    clearInterval(energy); alert("Oh no, they died from exhaustion!")
     }
 }
-const play = setInterval(pLife, 8000);
+const play = setInterval(pLife, 6000);
+    let uptoPlay = 10;
     function pLife(){
     const pCount= document.getElementById("play");
-    pCount.innerHTML=--upto;
-    if(upto<=1){
-    clearInterval(play); 
+    pCount.innerHTML=--uptoPlay;
+    if(uptoPlay<=1){
+    clearInterval(play); alert("Oh no, they died from boredom!")
     }
 }
     
