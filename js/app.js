@@ -19,7 +19,7 @@ console.log(Tamagotchi = new Pet (petName, 10, 10, 10, 1))
 //Hunger (1-10 scale), Sleepiness (1-10 scale), Boredom (1-10 scale), Age Up
 //Make these decrease on intervals and increase with user action
 
-const hunger = setInterval(hLife, 8000);
+const hunger = setInterval(hLife, 5000);
     let uptoHunger=10;
     function hLife(){
     const hCount= document.getElementById("hunger");
@@ -29,7 +29,7 @@ const hunger = setInterval(hLife, 8000);
     }
 }
 
-const energy = setInterval(eLife, 12000);
+const energy = setInterval(eLife, 8000);
     let uptoEnergy=10;
     function eLife() {        
     const eCount= document.getElementById("energy");
@@ -38,7 +38,7 @@ const energy = setInterval(eLife, 12000);
     clearInterval(energy); alert("Oh no, they died from exhaustion!")
     }
 }
-const play = setInterval(pLife, 6000);
+const play = setInterval(pLife, 3000);
     let uptoPlay = 10;
     function pLife(){
     const pCount= document.getElementById("play");
@@ -64,7 +64,11 @@ const button1 = document.getElementById("feed()")
 //     feed().innerHTML = count;
 // }
   
-const button2 = document.getElementById("energize()")
+const button2 = document.getElementById("energize()");
+    // button2.innerHTML = uptoHunger;
+    // button2.onClick = function() {
+    //     uptoHunger += 1;
+    // }
 
 
 const button3 = document.getElementById("playWith()")
