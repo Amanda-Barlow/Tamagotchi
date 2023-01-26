@@ -29,7 +29,7 @@ const hunger = setInterval(hLife, 5000);
     }
 }
 
-const energy = setInterval(eLife, 8000);
+const energy = setInterval(eLife, 7000);
     let uptoEnergy=10;
     function eLife() {        
     const eCount= document.getElementById("energy");
@@ -47,7 +47,7 @@ const play = setInterval(pLife, 3000);
     clearInterval(play); alert("Oh no, they died from boredom!")
     }
 }
-const age = setInterval(ageUp, 10000);
+const age = setInterval(ageUp, 8000);
     let uptoAge = 1;
     function ageUp(){
     const aCount= document.getElementById("age");
